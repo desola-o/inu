@@ -1,4 +1,8 @@
-<html lang="en" class="w-mod-js wf-figtree-n4-active wf-figtree-n7-active wf-figtree-n6-active wf-figtree-n5-active wf-figtree-n3-active wf-active w-mod-ix dark"><head><style>
+html
+<!DOCTYPE html>
+<html lang="en" class="w-mod-js wf-figtree-n4-active wf-figtree-n7-active wf-figtree-n6-active wf-figtree-n5-active wf-figtree-n3-active wf-active w-mod-ix dark">
+<head>
+<style>
 .wf-force-outline-none[tabindex="-1"]:focus{outline:none;}
 
 /* Robust Mobile Double Hamburger Fix */
@@ -20,7 +24,7 @@
   object-fit: contain !important;
 }
 
-/* Footer Logo Scaling Fix - Tripled in size from 45px to 135px */
+/* Footer Logo Scaling Fix - Tripled Size */
 .footer-logo {
   max-height: 135px !important;
   width: auto !important;
@@ -392,36 +396,41 @@
   opacity: 1;
 }
 
-/* --- Redesigned Modern Bottom-Left Floating Cookie Banner (Completely avoids right corner chat widget) --- */
+/* --- Cookie Consent Widget Styles --- */
 #cookie-consent-widget {
+  display: none; /* Hidden by default to prevent layout shift before localstorage check */
   position: fixed;
-  bottom: 24px; 
-  left: 24px;
-  right: auto !important;
-  width: 380px !important;
-  max-width: calc(100vw - 48px) !important;
-  background: rgba(12, 12, 14, 0.98);
+  bottom: 0; left: 0; right: 0;
+  background: rgba(12, 12, 14, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: #fff;
   z-index: 99999;
-  padding: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+}
+@media(min-width: 768px) {
+  #cookie-consent-widget {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 100px 20px 40px !important; /* Right padding to prevent overlay with active chat icon */
+    text-align: left;
+  }
 }
 @media(max-width: 767px) {
   #cookie-consent-widget {
-    left: 12px;
-    bottom: 12px;
-    max-width: calc(100vw - 24px) !important;
+    align-items: flex-start !important; /* Left-align layout box contents on mobile */
   }
 }
 .cookie-text-container {
-  text-align: left !important;
+  max-width: 800px;
+  text-align: left !important; /* Universally left-aligned */
 }
 
 /* Hard Removal of Hover Effects and Arrow Extensions on Cookie Modal Buttons */
@@ -447,7 +456,7 @@
   height: 0 !important;
 }
 #cookie-accept:hover {
-  background-color: #b55d3e !important;
+  background-color: #b55d3e !important; /* Simple color change without arrow transitions */
 }
 #cookie-reject:hover { 
   background-color: rgba(255, 255, 255, 0.08) !important; 
@@ -616,7 +625,7 @@ body.scroll-freeze .hero-section .container {
   box-shadow: 0 6px 20px rgba(198, 107, 74, 0.35);
   cursor: pointer;
   z-index: 100001;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, bottom 0.3s ease !important;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .chat-widget-trigger:hover {
@@ -636,7 +645,7 @@ body.scroll-freeze .hero-section .container {
   width: 380px;
   max-width: calc(100vw - 48px);
   height: 600px;
-  max-height: calc(100vh - 130px);
+  max-height: calc(100vh - 140px);
   background-color: #0c0c0e;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
@@ -646,6 +655,7 @@ body.scroll-freeze .hero-section .container {
   z-index: 100001;
   overflow: hidden;
   font-family: 'Figtree', sans-serif;
+  transition: bottom 0.3s ease !important;
 }
 .chat-widget-header {
   background-color: #121214;
@@ -702,7 +712,27 @@ body.scroll-freeze .hero-section .container {
   border-radius: 3px;
 }
 
-</style><meta charset="utf-8"><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"><title>INU Legal Consulting Professional Corporation: Canadian Immigration Simplified</title><meta content="INU Legal Consulting is a law firm based in Toronto, specializing in immigration services. We provide expert guidance in all areas of immigration law." name="description"><meta content="INU Legal Consulting Professional Corporation: Canadian Immigration Simplified" property="og:title"><meta content="INU Legal Consulting is a law firm based in Toronto, specializing in immigration services. We provide expert guidance in all areas of immigration law." property="og:description"><meta content="summary_large_image" name="twitter:card"><meta content="width=device-width, initial-scale=1" name="viewport"><link href="https://cdn.prod.website-files.com/69a53ba3b335588cbd413863/css/lawtide-webflow-template.webflow.shared.399813e86.css" rel="stylesheet" type="text/css" integrity="sha384-OZgT6G5Tyi9dIF8+F6Yxhby/x2G8iqpwDuYJwvXEnpWb71YGqcIDUo4MXhdnUHKN" crossorigin="anonymous"><style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="cf4c6ac5-5529-3596-0ec2-68d236b7138e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="cf4c6ac5-5529-3596-0ec2-68d236b713ba"] {opacity:0;}}</style><link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree:300,400,500,600,700" media="all"><script type="text/javascript">WebFont.load({  google: {    families: ["Figtree:300,400,500,600,700"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://i.ibb.co/8Lr6H0bP/INU-Legal-Consulting-logo.jpg" rel="shortcut icon" type="image/x-icon"><link href="https://i.ibb.co/8Lr6H0bP/INU-Legal-Consulting-logo.jpg" rel="apple-touch-icon"></head><body cz-shortcut-listen="true">
+</style>
+<meta charset="utf-8">
+<link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous">
+<title>INU Legal Consulting Professional Corporation: Canadian Immigration Simplified</title>
+<meta content="INU Legal Consulting is a law firm based in Toronto, specializing in immigration services. We provide expert guidance in all areas of immigration law." name="description">
+<meta content="INU Legal Consulting Professional Corporation: Canadian Immigration Simplified" property="og:title">
+<meta content="INU Legal Consulting is a law firm based in Toronto, specializing in immigration services. We provide expert guidance in all areas of immigration law." property="og:description">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="https://cdn.prod.website-files.com/69a53ba3b335588cbd413863/css/lawtide-webflow-template.webflow.shared.399813e86.css" rel="stylesheet" type="text/css" integrity="sha384-OZgT6G5Tyi9dIF8+F6Yxhby/x2G8iqpwDuYJwvXEnpWb71YGqcIDUo4MXhdnUHKN" crossorigin="anonymous">
+<style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="cf4c6ac5-5529-3596-0ec2-68d236b7138e"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="cf4c6ac5-5529-3596-0ec2-68d236b713ba"] {opacity:0;}}</style>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree:300,400,500,600,700" media="all">
+<script type="text/javascript">WebFont.load({  google: {    families: ["Figtree:300,400,500,600,700"]  }});</script>
+<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+<link href="https://i.ibb.co/8Lr6H0bP/INU-Legal-Consulting-logo.jpg" rel="shortcut icon" type="image/x-icon">
+<link href="https://i.ibb.co/8Lr6H0bP/INU-Legal-Consulting-logo.jpg" rel="apple-touch-icon">
+</head>
+<body cz-shortcut-listen="true">
 
 <div data-w-id="8a1b1273-3677-406b-6411-8c93416ebb1d" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><div class="w-layout-blockcontainer container w-container"><div class="nav-wrapper"><a href="/" aria-current="page" class="brand-logo-link w-nav-brand w--current" aria-label="home"><img loading="lazy" src="https://i.ibb.co/bgw9XJgV/Untitled-design-15.png" alt="INU Legal Logo" class="logo"></a><nav role="navigation" class="nav-menu w-nav-menu"><div class="nav-link-div"><a href="#services" class="nav-link w-nav-link" style="max-width: 1440px;">Services</a><a href="#about" class="nav-link w-nav-link" style="max-width: 1440px;">About Us</a><a href="#testimonials" class="nav-link w-nav-link" style="max-width: 1440px;">Testimonials</a><a href="#faqs" class="nav-link w-nav-link" style="max-width: 1440px;">FAQs</a></div></nav><div class="nav-button-wrapper"><div class="nav-button-div"><a data-wf--button--variant="nav-button" href="https://calendly.com/inulegalconsulting" target="_blank" class="button w-button shimmer-btn">Book a consultation</a></div><div class="nav-menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><div class="menu-toggle-icon" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M3 6H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M3 18H21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div></div></div></div></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div></div><section class="hero-section" style="position: relative; overflow: hidden; padding-bottom: 0px !important;"><video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; opacity: 0.35;"><source src="https://res.cloudinary.com/dyowwzpmo/video/upload/v177566168/5954_Skating_Ice_1920x1080_ol91zk.mp4" type="video/mp4"></video><div class="w-layout-blockcontainer container w-container" style="position: relative; z-index: 2; padding-bottom: 80px;"><div data-w-id="e0ccb1d6-a2d0-b192-9de5-7ee0e1817551" style="filter: blur(0px); opacity: 1;" class="hero-wrapper"><div class="hero-detail-div" style="max-width: 850px;"><div class="common-heading-div"><div data-w-id="608b2350-dcc7-8d62-ea1a-1dc8b6da6d50" style="opacity: 1;" class="paragraph white-text">You deserve to be here as much as anyone else.</div><div data-w-id="13888e0f-27e9-8a61-b98f-2be934e7c7d7" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="hero-heading-div"><h1 class="white-text">Canadian Immigration Simplified</h1></div><p data-w-id="46048ef8-911e-7724-ba04-e8738337e3b5" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="paragraph hero-paragraph">INU Legal Consulting Professional Corporation offers a full range of immigration services tailored to your personal goals. Whether you are applying to study, work, visit, or settle permanently in Canada, we make the process clear, organized, and stress-free.</p></div><div data-w-id="70f25ce5-ed1b-2e5a-e702-0d0f53c1c1fd" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;" class="common-button-div"><a data-wf--button--variant="base" href="#about" class="button w-button shimmer-btn">Learn More</a></div></div></div></div>
 
@@ -856,7 +886,7 @@ body.scroll-freeze .hero-section .container {
       </div>
       <div style="display: flex; flex-direction: column; gap: 6px;">
         <label for="chat-message" style="color: #e4e4e7; font-size: 0.8rem; font-weight: 600;">Tell us more about your immigration plans *</label>
-        <textarea id="chat-message" name="message" class="newsletter-input" style="border-radius: 4px; padding: 10px 14px; font-size: 0.9rem; min-height: 85px; resize: none;" required placeholder="describe where you are in your immigration journey and what you would like help with"></textarea>
+        <textarea id="chat-message" name="message" class="newsletter-input" style="border-radius: 4px; padding: 10px 14px; font-size: 0.9rem; min-height: 85px; resize: none;" required placeholder="Describe where you are in your immigration journey and what you would like help with"></textarea>
       </div>
       <button type="submit" class="button w-button shimmer-btn" style="background-color: #c66b4a !important; color: white !important; padding: 12px !important; border-radius: 50px !important; border: none !important; cursor: pointer; font-weight: 600; font-size: 0.95rem; text-align: center; margin-top: 10px; width: 100%; box-shadow: 0 4px 12px rgba(198, 107, 74, 0.25);">Submit Inquiry</button>
     </form>
@@ -871,15 +901,15 @@ body.scroll-freeze .hero-section .container {
   </div>
 </div>
 
-<!-- Cookie Consent Widget (Re-positioned cleanly to the bottom-left corner) -->
-<div id="cookie-consent-widget" style="display: none;">
+<!-- Cookie Consent Widget -->
+<div id="cookie-consent-widget">
   <div class="cookie-text-container">
     <h4 style="margin-top: 0; margin-bottom: 8px; font-size: 1.1rem; font-weight: 700; color: #f4f4f5;">Help Us Improve Our Website with Cookies</h4>
     <p style="margin: 0; font-size: 0.9rem; color: #a1a1aa; line-height: 1.5;">We use cookies and process data from your device to analyze website performance, personalize ad content, and improve your experience.</p>
   </div>
-  <div style="display: flex; gap: 12px; flex-shrink: 0; margin-top: 10px; width: 100%;">
-    <button id="cookie-accept" class="button w-button" style="flex: 1; background-color: #c66b4a; padding: 10px 24px; border-radius: 4px; border: none; cursor: pointer; color: white; font-weight: 600; white-space: nowrap; text-align: center;">Accept</button>
-    <button id="cookie-reject" class="button w-button" style="flex: 1; background-color: transparent; border: 1px solid #52525b; padding: 10px 24px; border-radius: 4px; cursor: pointer; color: #e4e4e7; font-weight: 600; white-space: nowrap; transition: background-color 0.2s; text-align: center;">Reject</button>
+  <div style="display: flex; gap: 12px; flex-shrink: 0; margin-top: 10px;">
+    <button id="cookie-accept" class="button w-button" style="background-color: #c66b4a; padding: 10px 24px; border-radius: 4px; border: none; cursor: pointer; color: white; font-weight: 600; white-space: nowrap;">Accept</button>
+    <button id="cookie-reject" class="button w-button" style="background-color: transparent; border: 1px solid #52525b; padding: 10px 24px; border-radius: 4px; cursor: pointer; color: #e4e4e7; font-weight: 600; white-space: nowrap; transition: background-color 0.2s;">Reject</button>
   </div>
 </div>
 
@@ -964,17 +994,24 @@ $(document).ready(function() {
     }, 200);
   });
   
-  /* Robust First-Time Visitor Cookie Banner Control Logic */
-  if (localStorage.getItem('inu_cookie_dismissed') || localStorage.getItem('inu_visited_before')) {
+  /* Cookie Consent Logic & LocalStorage Persistent Verification */
+  if (localStorage.getItem('cookieConsentDismissed')) {
     $('#cookie-consent-widget').hide();
+    $('.chat-widget-trigger').css('bottom', '24px');
+    $('.chat-widget-container').css('bottom', '96px');
   } else {
-    $('#cookie-consent-widget').fadeIn(300);
-    localStorage.setItem('inu_visited_before', 'true');
+    $('#cookie-consent-widget').show();
+    // Offset the chat widget trigger bottom position so it sits cleanly above the cookie banner
+    $('.chat-widget-trigger').css('bottom', '110px');
+    $('.chat-widget-container').css('bottom', '182px');
   }
 
   $('#cookie-accept, #cookie-reject').on('click', function() {
-    localStorage.setItem('inu_cookie_dismissed', 'true');
     $('#cookie-consent-widget').fadeOut(300);
+    localStorage.setItem('cookieConsentDismissed', 'true');
+    // Smoothly animate the chat trigger down to its standard position
+    $('.chat-widget-trigger').css('bottom', '24px');
+    $('.chat-widget-container').css('bottom', '96px');
   });
 
   /* Open / Close Newsletter Modal Logic */
@@ -1084,4 +1121,6 @@ $(document).ready(function() {
     }
   });
 });
-</script></body></html>
+</script>
+</body>
+</html>
