@@ -684,6 +684,16 @@ body.scroll-freeze .hero-section .container {
   border-color: rgba(198, 107, 74, 0.35) !important;
 }
 
+/* --- Responsive Hard Removal of Hover Effects on Mobile View --- */
+@media (max-width: 991px) {
+  .founder-card-wrapper:hover, 
+  .testimonial-slider-card:hover {
+    transform: none !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+    border-color: rgba(0, 0, 0, 0.06) !important;
+  }
+}
+
 /* --- Footer Inline Newsletter Custom Styles (Screenshot Layout Match) --- */
 .footer-newsletter-input {
   background-color: #111113 !important;
@@ -856,7 +866,7 @@ body.scroll-freeze .hero-section .container {
     <!-- Branding & Info Column -->
     <div style="flex: 1 1 300px; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; text-align: left;">
       <div data-w-id="64bc5148-45a3-460f-554b-008a71ce1894" class="newsletter-heading-div" style="opacity: 1;">
-        <img src="https://i.ibb.co/qMCL2ZW0/inulogowhite.png" alt="INU Legal Consulting Logo" class="footer-logo" style="max-height: 100px !important; width: auto !important; object-fit: contain !important; display: block;">
+        <span style="font-size: 1.55rem; font-weight: 700; color: #ffffff; letter-spacing: 0.5px; display: block; font-family: 'Figtree', sans-serif;">INU Legal Consulting</span>
       </div>
       <div class="small-paragraph newsletter-text" style="color: rgba(255, 255, 255, 0.7); font-size: 14px; margin: 0; line-height: 1.6;">
         📍 Toronto, Canada <br> 
